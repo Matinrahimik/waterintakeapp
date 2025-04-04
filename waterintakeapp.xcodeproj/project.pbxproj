@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		27507C0D2DA061FF0001CFBF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27507C0C2DA061FF0001CFBF /* WidgetKit.framework */; };
+		27507C0F2DA061FF0001CFBF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27507C0E2DA061FF0001CFBF /* SwiftUI.framework */; };
+		27507C202DA062000001CFBF /* Water widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 27507C0A2DA061FF0001CFBF /* Water widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		27507BEA2DA05EDD0001CFBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 27507BD82DA05EDC0001CFBF;
 			remoteInfo = waterintakeapp;
 		};
+		27507C1E2DA062000001CFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27507BD12DA05EDC0001CFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27507C092DA061FF0001CFBF;
+			remoteInfo = "Water widgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27507C252DA062000001CFBF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27507C202DA062000001CFBF /* Water widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27507BD92DA05EDC0001CFBF /* waterintakeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waterintakeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27507BE92DA05EDD0001CFBF /* waterintakeappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waterintakeappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27507BF32DA05EDD0001CFBF /* waterintakeappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waterintakeappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27507C0A2DA061FF0001CFBF /* Water widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Water widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27507C0C2DA061FF0001CFBF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		27507C0E2DA061FF0001CFBF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		27507C212DA062000001CFBF /* Exceptions for "Water widget" folder in "Water widgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 27507C092DA061FF0001CFBF /* Water widgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		27507BDB2DA05EDC0001CFBF /* waterintakeapp */ = {
@@ -43,6 +83,14 @@
 		27507BF62DA05EDD0001CFBF /* waterintakeappUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = waterintakeappUITests;
+			sourceTree = "<group>";
+		};
+		27507C102DA061FF0001CFBF /* Water widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				27507C212DA062000001CFBF /* Exceptions for "Water widget" folder in "Water widgetExtension" target */,
+			);
+			path = "Water widget";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27507C072DA061FF0001CFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27507C0F2DA061FF0001CFBF /* SwiftUI.framework in Frameworks */,
+				27507C0D2DA061FF0001CFBF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				27507BDB2DA05EDC0001CFBF /* waterintakeapp */,
 				27507BEC2DA05EDD0001CFBF /* waterintakeappTests */,
 				27507BF62DA05EDD0001CFBF /* waterintakeappUITests */,
+				27507C102DA061FF0001CFBF /* Water widget */,
+				27507C0B2DA061FF0001CFBF /* Frameworks */,
 				27507BDA2DA05EDC0001CFBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				27507BD92DA05EDC0001CFBF /* waterintakeapp.app */,
 				27507BE92DA05EDD0001CFBF /* waterintakeappTests.xctest */,
 				27507BF32DA05EDD0001CFBF /* waterintakeappUITests.xctest */,
+				27507C0A2DA061FF0001CFBF /* Water widgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		27507C0B2DA061FF0001CFBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27507C0C2DA061FF0001CFBF /* WidgetKit.framework */,
+				27507C0E2DA061FF0001CFBF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				27507BD52DA05EDC0001CFBF /* Sources */,
 				27507BD62DA05EDC0001CFBF /* Frameworks */,
 				27507BD72DA05EDC0001CFBF /* Resources */,
+				27507C252DA062000001CFBF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27507C1F2DA062000001CFBF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				27507BDB2DA05EDC0001CFBF /* waterintakeapp */,
@@ -163,6 +234,28 @@
 			productReference = 27507BF32DA05EDD0001CFBF /* waterintakeappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		27507C092DA061FF0001CFBF /* Water widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27507C222DA062000001CFBF /* Build configuration list for PBXNativeTarget "Water widgetExtension" */;
+			buildPhases = (
+				27507C062DA061FF0001CFBF /* Sources */,
+				27507C072DA061FF0001CFBF /* Frameworks */,
+				27507C082DA061FF0001CFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				27507C102DA061FF0001CFBF /* Water widget */,
+			);
+			name = "Water widgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "Water widgetExtension";
+			productReference = 27507C0A2DA061FF0001CFBF /* Water widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 27507BD82DA05EDC0001CFBF;
 					};
+					27507C092DA061FF0001CFBF = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 27507BD42DA05EDC0001CFBF /* Build configuration list for PBXProject "waterintakeapp" */;
@@ -203,6 +299,7 @@
 				27507BD82DA05EDC0001CFBF /* waterintakeapp */,
 				27507BE82DA05EDD0001CFBF /* waterintakeappTests */,
 				27507BF22DA05EDD0001CFBF /* waterintakeappUITests */,
+				27507C092DA061FF0001CFBF /* Water widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		27507BF12DA05EDD0001CFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27507C082DA061FF0001CFBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27507C062DA061FF0001CFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 27507BD82DA05EDC0001CFBF /* waterintakeapp */;
 			targetProxy = 27507BF42DA05EDD0001CFBF /* PBXContainerItemProxy */;
+		};
+		27507C1F2DA062000001CFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27507C092DA061FF0001CFBF /* Water widgetExtension */;
+			targetProxy = 27507C1E2DA062000001CFBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +634,60 @@
 			};
 			name = Release;
 		};
+		27507C232DA062000001CFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8WG2SQJ6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Water widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Water widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Matin.waterintakeapp.Water-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27507C242DA062000001CFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8WG2SQJ6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Water widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Water widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Matin.waterintakeapp.Water-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +723,15 @@
 			buildConfigurations = (
 				27507C042DA05EDD0001CFBF /* Debug */,
 				27507C052DA05EDD0001CFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27507C222DA062000001CFBF /* Build configuration list for PBXNativeTarget "Water widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27507C232DA062000001CFBF /* Debug */,
+				27507C242DA062000001CFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
